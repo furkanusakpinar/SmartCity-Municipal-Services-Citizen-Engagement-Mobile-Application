@@ -11,6 +11,19 @@
 
 ---
 
+<p align="center">
+
+![React Native](https://img.shields.io/badge/React%20Native-0.7x-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Expo](https://img.shields.io/badge/Expo-SDK%2050-000020?style=for-the-badge&logo=expo&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![API](https://img.shields.io/badge/API-NewsAPI-red?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android-lightgrey?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+
+</p>
+
+---
+
 ## 📱 Uygulama Hakkında
 
 Bu uygulama, Alanya Belediyesi vatandaşlarının ve ziyaretçilerinin şehir hizmetlerine, güncel duyurulara ve turistik noktalara en hızlı şekilde ulaşabilmesi için modern teknolojilerle geliştirilmiştir.

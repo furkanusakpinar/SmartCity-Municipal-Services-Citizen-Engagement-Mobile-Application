@@ -75,8 +75,3 @@ Uygulamayı yerel ortamınızda çalıştırmak için aşağıdaki adımları iz
    ```
 
 ---
-
-<p align="center">
-  Alanya Belediyesi Bilgi İşlem Müdürlüğü tarafından desteklenmektedir. <br />
-  © 2026 Alanya Belediyesi. Tüm hakları saklıdır.
-</p>

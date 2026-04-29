@@ -49,7 +49,6 @@ export default function HomeScreen() {
         throw new Error('No data');
       }
     } catch (error) {
-      // Fallback
       setAnnouncements([
         {
           id: '1',
@@ -82,7 +81,6 @@ export default function HomeScreen() {
       <StatusBar barStyle="light-content" backgroundColor={theme.primary} />
       <ScrollView showsVerticalScrollIndicator={false}>
 
-        {/* ── HEADER ── */}
         <View style={[styles.header, { backgroundColor: theme.primary }]}>
           <View style={styles.headerTop}>
             <View style={styles.headerBrand}>
@@ -100,13 +98,11 @@ export default function HomeScreen() {
             </TouchableOpacity>
           </View>
 
-          {/* Search */}
           <TouchableOpacity style={styles.searchBar} onPress={() => router.push('/services')}>
             <Search size={18} color="#90A4AE" />
             <Text style={styles.searchText}>Hizmet veya bilgi arayın...</Text>
           </TouchableOpacity>
 
-          {/* Stats */}
           <View style={styles.statsRow}>
             <StatItem value="350K+" label="Nüfus" />
             <View style={styles.statDivider} />
@@ -116,7 +112,6 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* ── QUICK SERVICES ── */}
         <View style={styles.section}>
           <SectionHeader title="Hızlı Hizmetler" />
           <View style={styles.serviceGrid}>
@@ -136,7 +131,6 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* ── HERO BANNER ── */}
         <View style={styles.section}>
           <ImageBackground
             source={require('../assets/images/alanya_hero.png')}
@@ -156,7 +150,6 @@ export default function HomeScreen() {
           </ImageBackground>
         </View>
 
-        {/* ── ANNOUNCEMENTS ── */}
         <View style={styles.section}>
           <SectionHeader title="Güncel Duyurular" action="Tümü" onActionPress={() => router.push('/news')} />
           {loading ? (

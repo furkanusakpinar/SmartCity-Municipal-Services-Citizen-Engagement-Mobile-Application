@@ -17,7 +17,7 @@ const FEATURED = [
     category: 'Tarih',
     rating: 4.9,
     visits: '1.2M',
-    image: require('../assets/images/kizilkule.jpg'),
+    image: require('../assets/images/alanya_hero.png'),
     url: 'https://alanya.bel.tr/Alanya-Kalesi'
   },
   {
@@ -109,14 +109,12 @@ export default function DiscoverScreen() {
 
       <ScrollView showsVerticalScrollIndicator={false}>
 
-        {/* Header */}
         <View style={[styles.header, { backgroundColor: theme.primary }]}>
           <Text style={styles.headerEyebrow}>Alanya Belediyesi</Text>
           <Text style={styles.headerTitle}>Alanya'yı Keşfet</Text>
           <Text style={styles.headerSubtitle}>Tarih, doğa ve kültürün buluştuğu nokta</Text>
         </View>
 
-        {/* Featured Horizontal */}
         <View style={styles.featuredSection}>
           <View style={styles.sectionRow}>
             <View style={styles.sectionTitleRow}>
@@ -159,7 +157,6 @@ export default function DiscoverScreen() {
           />
         </View>
 
-        {/* Category Filter */}
         <View style={styles.filterRow}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.filterList}>
             {CATEGORIES.map((cat) => (
@@ -187,7 +184,6 @@ export default function DiscoverScreen() {
           </ScrollView>
         </View>
 
-        {/* Places List */}
         <View style={styles.placesList}>
           {filtered.map((place) => {
             const catColor = CAT_COLORS[place.category] || theme.primary;

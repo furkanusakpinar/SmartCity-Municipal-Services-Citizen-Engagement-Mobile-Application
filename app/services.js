@@ -66,8 +66,6 @@ export default function ServicesScreen() {
       if (service.url.startsWith('tel:')) {
         Linking.openURL(service.url);
       } else {
-        // Expo WebBrowser veya normal Linking kullanılabilir. 
-        // Kullanıcı tüm butonların çalışmasını istediği için dış linke yönlendiriyoruz.
         Linking.openURL(service.url).catch(err => {
           Alert.alert('Hata', 'Bağlantı açılamadı.');
         });
@@ -81,7 +79,6 @@ export default function ServicesScreen() {
     <View style={[styles.container, { backgroundColor: theme.background }]}>
       <StatusBar barStyle="light-content" backgroundColor={theme.primary} />
 
-      {/* Header */}
       <View style={[styles.header, { backgroundColor: theme.primary }]}>
         <Text style={styles.headerEyebrow}>Alanya Belediyesi</Text>
         <Text style={styles.headerTitle}>E-Belediye Hizmetleri</Text>
@@ -92,7 +89,6 @@ export default function ServicesScreen() {
 
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={styles.scrollContent}>
 
-        {/* Emergency Banner */}
         <TouchableOpacity 
           style={styles.emergencyBanner} 
           activeOpacity={0.85}
@@ -108,10 +104,8 @@ export default function ServicesScreen() {
           <ChevronRight size={20} color="rgba(255,255,255,0.8)" />
         </TouchableOpacity>
 
-        {/* Service Groups */}
         {SERVICE_GROUPS.map((group) => (
           <View key={group.groupTitle} style={styles.groupSection}>
-            {/* Group Header */}
             <TouchableOpacity
               style={[styles.groupHeader, { backgroundColor: group.groupColor }]}
               onPress={() => setExpanded(expanded === group.groupTitle ? null : group.groupTitle)}
@@ -128,7 +122,6 @@ export default function ServicesScreen() {
               </View>
             </TouchableOpacity>
 
-            {/* Service Items */}
             <View style={[styles.serviceList, { backgroundColor: theme.card, borderColor: theme.border }]}>
               {group.services.map((service, idx) => (
                 <TouchableOpacity

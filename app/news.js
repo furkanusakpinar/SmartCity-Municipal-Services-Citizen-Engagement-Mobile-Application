@@ -9,7 +9,6 @@ import { Bookmark, Clock, ChevronRight, AlertCircle } from 'lucide-react-native'
 
 const CATEGORIES = ['Tümü', 'Duyurular', 'Projeler', 'Etkinlikler', 'İhale'];
 
-// KENDİ API ANAHTARINIZI BURAYA YAZIN: https://newsapi.org/ adresinden ücretsiz alabilirsiniz.
 const NEWS_API_KEY = process.env.EXPO_PUBLIC_NEWS_API_KEY; 
 
 const CATEGORY_COLORS = {
@@ -26,7 +25,6 @@ export default function NewsScreen() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
-  const [hasApiKey, setHasApiKey] = useState(!!NEWS_API_KEY);
 
   const fetchNews = async () => {
     try {
@@ -58,8 +56,6 @@ export default function NewsScreen() {
         throw new Error('No articles');
       }
     } catch (error) {
-      console.log('News fetch info:', error.message);
-      // Fallback: Alanya Belediyesi Kurumsal Haberler
       setNews([
         {
           id: '1',
@@ -121,13 +117,11 @@ export default function NewsScreen() {
     <View style={[styles.container, { backgroundColor: theme.background }]}>
       <StatusBar barStyle="light-content" backgroundColor={theme.primary} />
 
-      {/* Header */}
       <View style={[styles.header, { backgroundColor: theme.primary }]}>
         <Text style={styles.headerEyebrow}>Alanya Belediyesi</Text>
         <Text style={styles.headerTitle}>Haberler & Duyurular</Text>
       </View>
 
-      {/* API Key Warning (Sadece geliştirme modunda görünürse iyi olur ama kullanıcıya bilgi vermek için koyalım) */}
       {!NEWS_API_KEY && (
         <TouchableOpacity 
           style={styles.apiWarning}
@@ -139,7 +133,6 @@ export default function NewsScreen() {
         </TouchableOpacity>
       )}
 
-      {/* Category Chips */}
       <View style={[styles.chipBar, { backgroundColor: theme.card, borderBottomColor: theme.border }]}>
         <FlatList
           data={CATEGORIES}
@@ -168,7 +161,6 @@ export default function NewsScreen() {
         />
       </View>
 
-      {/* News List */}
       {loading && !refreshing ? (
         <View style={styles.centerContainer}>
           <ActivityIndicator size="large" color={theme.primary} />

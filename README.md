@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# 🏰 Alanya Belediyesi Mobil Uygulaması
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+<p align="center">
+  <img src="./assets/images/belediye.png" width="120" alt="Alanya Belediyesi Logo" />
+</p>
 
-## Get started
+<p align="center">
+  <strong>Geleceğin Alanya'sı için Dijital Dönüşüm</strong><br />
+  Tarih, Doğa ve Kültürün Buluştuğu Şehir Artık Cebinizde!
+</p>
 
-1. Install dependencies
+---
 
+## 📱 Uygulama Hakkında
+
+Bu uygulama, Alanya Belediyesi vatandaşlarının ve ziyaretçilerinin şehir hizmetlerine, güncel duyurulara ve turistik noktalara en hızlı şekilde ulaşabilmesi için modern teknolojilerle geliştirilmiştir.
+
+### ✨ Temel Özellikler
+
+- 📰 **Canlı Haber & Duyuru**: NewsAPI entegrasyonu ile Alanya'daki en güncel gelişmeler.
+- 💳 **E-Belediye Hizmetleri**: Borç sorgulama, beyan ve online ödeme portalı yönlendirmeleri.
+- 💊 **Nöbetçi Eczaneler**: Alanya genelindeki anlık nöbetçi eczane listesi.
+- 🏰 **Alanya Keşfet**: Tarihi yerler, plajlar ve doğal güzellikler için rehber ve gerçek fotoğraflar.
+- 🚑 **Acil Hatlar**: Tek tıkla belediye çözüm masası ve acil yardım hatlarına ulaşım.
+- 🌙 **Modern Tasarım**: Koyu lacivert ve altın sarısı kurumsal renklerle premium UI/UX deneyimi.
+
+---
+
+## 🛠️ Teknoloji Yığını
+
+- **Framework**: [Expo](https://expo.dev/) (React Native)
+- **Navigasyon**: [Expo Router](https://docs.expo.dev/router/introduction/) (Dosya tabanlı yönlendirme)
+- **İkonlar**: [Lucide React Native](https://lucide.dev/)
+- **API**: [NewsAPI](https://newsapi.org/) (Dinamik haber akışı)
+- **Stil**: Vanilla React Native StyleSheet (Premium Tasarım)
+
+---
+
+## 🚀 Kurulum
+
+Uygulamayı yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
+
+1. **Depoyu Klonlayın**:
+   ```bash
+   git clone [repo-url]
+   ```
+
+2. **Bağımlılıkları Yükleyin**:
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Çevre Değişkenlerini Ayarlayın**:
+   Kök dizinde bir `.env` dosyası oluşturun ve NewsAPI anahtarınızı ekleyin:
+   ```env
+   EXPO_PUBLIC_NEWS_API_KEY=api_anahtariniz_buraya
+   ```
 
+4. **Uygulamayı Başlatın**:
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<p align="center">
+  Alanya Belediyesi Bilgi İşlem Müdürlüğü tarafından desteklenmektedir. <br />
+  © 2026 Alanya Belediyesi. Tüm hakları saklıdır.
+</p>

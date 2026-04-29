@@ -1,0 +1,35 @@
+import React from 'react';
+import { Link } from 'expo-router';
+import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+
+export default function ModalScreen() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Modal</Text>
+      <Link href="/" dismissTo style={styles.link}>
+        <Text style={styles.linkText}>Ana sayfaya dön</Text>
+      </Link>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: '700',
+  },
+  link: {
+    marginTop: 15,
+    paddingVertical: 15,
+  },
+  linkText: {
+    color: '#008080',
+    fontSize: 16,
+  },
+});

@@ -61,10 +61,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/furkanusakpinar/Belediye-mobile-app.git
+git clone https://github.com/furkanusakpinar/SmartCity-Municipal-Services-Citizen-Engagement-Mobile-Application.git
 
 # Navigate to project folder
-cd Belediye-mobile-app
+cd SmartCity-Municipal-Services-Citizen-Engagement-Mobile-Application
 
 # Install dependencies
 npm install

@@ -1,75 +1,71 @@
 <p align="center">
-  <img src="https://img.icons8.com/fluency/96/home.png" width="80" alt="Logo" />
+  <img src="https://img.icons8.com/fluency/96/city-hall.png" width="90" alt="Municipality Logo" />
 </p>
 
-<h1 align="center">🏢 Best Emlak - Luxury Real Estate Platform</h1>
+<h1 align="center">🏛️ Smart City Municipality Platform</h1>
 
 <p align="center">
-  <strong>The Gateway to Your Dream Luxury Life</strong><br />
-  Modern, Reliable, and Premium Real Estate Experience is Now in Your Pocket!
+  <strong>Comprehensive Digital Infrastructure for Modern Urban Governance</strong><br />
+  Connecting citizens with essential services through a premium mobile experience.
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React%20Native-0.7x-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Expo-SDK%2054-000020?style=for-the-badge&logo=expo&logoColor=white" />
-  <img src="https://img.shields.io/badge/Firebase-Database-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Expo-SDK%2050-000020?style=for-the-badge&logo=expo&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-Auth%20%7C%20Database-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
   <img src="https://img.shields.io/badge/Platform-iOS%20%7C%20Android-lightgrey?style=for-the-badge" />
 </p>
 
 ---
 
-<h2 align="center">📱 About the Project</h2>
+## 📖 Executive Summary
 
-<p align="center">
-  <strong>Best Emlak</strong> is a modern mobile real estate platform integrated with Firebase,<br /> 
-  allowing users to discover luxury residences, villas, and exclusive lands.<br />
-  It turns property searching into a pleasure with its sleek Dark Mode design and fluid user experience.
-</p>
+This platform is a state-of-the-art mobile solution designed to bridge the gap between local government and citizens. It streamlines municipal operations by providing a unified interface for news, public services, and urban exploration. Built with performance and security in mind, it offers a seamless UX for both residents and tourists.
 
 ---
 
-<h2 align="center">✨ Key Features</h2>
+## ✨ Core Functionalities
 
-<p align="center">
-  🔐 <b>Advanced Authentication</b><br />
-  Secure registration and login system with Firebase Auth.<br /><br />
-  💾 <b>Remember Me (Persistent Login)</b><br />
-  Secure and permanent session management with Expo SecureStore.<br /><br />
-  ❤️ <b>Favorite System</b><br />
-  Add listings to your favorites instantly and keep them synchronized.<br /><br />
-  🏠 <b>Dynamic Listing Management</b><br />
-  Real-time property list updated via Firebase Realtime Database.<br /><br />
-  🔍 <b>Smart Filtering</b><br />
-  Detailed search options based on region, price, and category.<br /><br />
-  🔄 <b>Pull-to-Refresh</b><br />
-  Instantly update data by pulling down on all pages.
-</p>
+### 🏙️ Citizen Engagement
+- **Live News Feed**: Real-time integration with NewsAPI for localized city updates and emergency alerts.
+- **Official Announcements**: Push notifications for critical municipal statements.
+- **Solution Center**: Direct line for citizens to report issues and track resolutions.
 
----
+### 💳 Digital Municipality (E-Gov)
+- **Online Payments**: Secure integration for property tax inquiries and utility bill payments.
+- **Service Portals**: One-tap access to zoning plans, marriage applications, and permit requests.
+- **Smart Tracking**: Follow the status of municipal applications in real-time.
 
-<h2 align="center">🛠️ Tech Stack</h2>
+### 🏥 Health & Safety
+- **Duty Pharmacies**: Instant location-based list of pharmacies available after hours.
+- **Emergency Hotline**: Integrated directory for ambulance, fire department, and police services.
 
-<p align="center">
-  <b>Framework:</b> Expo (React Native)<br />
-  <b>Data & Auth:</b> Firebase (Realtime DB & Auth)<br />
-  <b>Routing:</b> Expo Router (Tab & Stack)<br />
-  <b>Storage:</b> Expo SecureStore<br />
-  <b>Icons:</b> Ionicons & Vector Icons<br />
-  <b>Notifications:</b> React Native Toast Message
-</p>
+### 🏰 Tourism & Discovery
+- **Point of Interest (POI)**: Interactive guide to historical landmarks, beaches, and parks.
+- **Visual Gallery**: High-quality imagery showcasing the city's natural and cultural heritage.
 
 ---
 
-<h2 align="center">🚀 Installation Guide</h2>
+## 🛠️ Technical Architecture
 
-<p align="center">
-  Follow these steps to set up the project on your local machine:
-</p>
+### Tech Stack
+- **Frontend**: [React Native](https://reactnative.dev/) with [Expo SDK](https://expo.dev/)
+- **State Management**: React Context & Hooks
+- **Data Persistence**: [Firebase Realtime Database](https://firebase.google.com/docs/database)
+- **Authentication**: [Firebase Auth](https://firebase.google.com/docs/auth)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/) (Next.js-style file-based routing)
+- **Styling**: Performance-optimized `StyleSheet` with a custom Dark Theme.
 
-<p align="center">
-  <b>1. Clone the Repository</b>
-</p>
+### Project Structure
+```text
+├── app/               # Expo Router pages & layouts
+├── assets/            # High-resolution branding & UI assets
+├── components/        # Atomic & composite UI components
+├── constants/         # Theme configurations & global data
+├── hooks/             # Custom React hooks
+└── services/          # API & Firebase service layers
+
 
 ```bash
-git clone https://github.com/furkanusakpinar/Estate-mobile-app.git
-cd Estate-mobile-app
+git clone https://github.com/furkanusakpinar/Belediye-mobile-app.git
+cd Belediye-mobile-app
